@@ -13,3 +13,17 @@
   img, svg, iframe {
     width: 100%;
 }
+
+header {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  
+
+  >div {
+    margin: 20px 0 40px 0;
+  }
+  >div>img {
+    width: 40px;
+  }
+}

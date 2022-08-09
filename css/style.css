@@ -12,4 +12,16 @@ body {
 
 img, svg, iframe {
   width: 100%;
+}
+
+header {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+header > div {
+  margin: 20px 0 40px 0;
+}
+header > div > img {
+  width: 40px;
 }/*# sourceMappingURL=style.css.map */
