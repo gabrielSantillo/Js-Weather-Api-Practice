@@ -8,6 +8,7 @@
     min-height: 100vh;
     place-items: center;
     width: 100%;
+    
   }
   
   img, svg, iframe {
@@ -25,5 +26,47 @@ header {
   }
   >div>img {
     width: 40px;
+  }
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+#weather_section_search {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 10px;
+  place-items: center;
+
+  >input {
+    padding: 5px;
+    border: 2px solid rgb(51, 41, 184);
+    border-width: .4px;
+    border-radius: 5px;
+    color: gray;
+    font-size: 1.2rem;
+  }
+
+  >button {
+    display: grid;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+
+    >img {
+      width: 30px;
+      padding: 2px;
+    }
+
+    >img:hover {
+      background-color: rgb(221, 220, 243);
+      border-radius: 5px;
+    }
+
+    >img:active {
+      width: 25px;
+    }
   }
 }

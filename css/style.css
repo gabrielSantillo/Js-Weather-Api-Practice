@@ -24,4 +24,42 @@ header > div {
 }
 header > div > img {
   width: 40px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+#weather_section_search {
+  display: grid;
+  grid-auto-flow: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  place-items: center;
+}
+#weather_section_search > input {
+  padding: 5px;
+  border: 2px solid rgb(51, 41, 184);
+  border-width: 0.4px;
+  border-radius: 5px;
+  color: gray;
+  font-size: 1.2rem;
+}
+#weather_section_search > button {
+  display: grid;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+#weather_section_search > button > img {
+  width: 30px;
+  padding: 2px;
+}
+#weather_section_search > button > img:hover {
+  background-color: rgb(221, 220, 243);
+  border-radius: 5px;
+}
+#weather_section_search > button > img:active {
+  width: 25px;
 }/*# sourceMappingURL=style.css.map */
