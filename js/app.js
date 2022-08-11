@@ -14,12 +14,29 @@ function post_success(response) {
     `weather_section_result`
   );
   weather_section_result[`innerHTML`] = `
-  <h2>${response[`data`][`name`]}</h2>
-  <p>Temperature: ${temperature}°C</p>
-  <p>Max Temperature: ${max_temperature}°C</p>
-  <p>Min Temperature: ${min_temperature}°C</p>
-  <p>Feels Like: ${feels_like}°C</p>
-  <hr>
+  <div id="temperature_div">
+    <div id="first_child"><h3>Weather</h3></div>
+    <div id="second_child"><p>${temperature}°C</p></div>
+    
+    <div id="third_child">
+      <div>
+        <p class="text">Max</p>
+        <p class="temperature">${max_temperature}°C</p>
+      </div>
+      <div>
+        <p class="text">Min</p>
+        <p class="temperature">${min_temperature}°C</p>
+      </div>
+      <div>
+        <p class="text">Feels Like</p>
+        <p class="temperature">${feels_like}°C</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div><h1>TITLE</h1></div>
+  <div><h1>TITLE</h1></div>
   `;
 
   let input_city = document.querySelector(`input`);
@@ -106,7 +123,7 @@ function post_success_forecast(response) {
 <p>Min Temperature: ${min_temperature}°C</p>
 <p>Feels like: ${feels_like}°C</p>
 </div>
-<hr>`;
+`;
   }
 }
 

@@ -62,4 +62,70 @@ main {
 }
 #weather_section_search > button > img:active {
   width: 25px;
+}
+
+#big_section {
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+
+#weather_section_result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#weather_section_result > div {
+  background-color: antiquewhite;
+}
+
+#temperature_div {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/25501.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#temperature_div > #first_child {
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white;
+}
+#temperature_div > #second_child {
+  text-align: start;
+  margin-left: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+#temperature_div > #third_child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 20px 20px 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  color: white;
+}
+#temperature_div > #third_child > div {
+  display: grid;
+  background-color: rgb(61, 113, 173);
+  padding: 10px;
+  width: 65%;
+  border-radius: 10px;
+}
+#temperature_div > #third_child > div > .temperature {
+  text-align: center;
+  font-weight: bold;
+}
+#temperature_div > #third_child > div > .text {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

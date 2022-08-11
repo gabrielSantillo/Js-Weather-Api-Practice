@@ -70,3 +70,75 @@ main {
     }
   }
 }
+
+#big_section {
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+
+#weather_section_result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+
+  >div {
+    background-color: antiquewhite;
+  }
+}
+
+#temperature_div {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/25501.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+
+  >#first_child {
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+  }
+
+  >#second_child {
+    text-align: start;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  >#third_child { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 20px 20px 20px;
+    column-gap: 10px;
+    color: white;
+    
+    >div {
+      display: grid;
+      background-color: rgb(61, 113, 173);
+      padding: 10px;
+      width: 65%;
+      border-radius: 10px;
+
+      >.temperature {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      >.text {
+        text-align: center;
+        font-size: .9rem;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
