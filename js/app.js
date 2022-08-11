@@ -14,7 +14,7 @@ function post_success(response) {
     `weather_section_result`
   );
   weather_section_result[`innerHTML`] = `
-  <div id="temperature_div">
+  <div id="first_card">
     <div id="first_child"><h3>Weather</h3></div>
     <div id="second_child"><p>${temperature}°C</p></div>
     
@@ -35,7 +35,22 @@ function post_success(response) {
   </div>
   
 
-  <div><h1>TITLE</h1></div>
+  <div id="second_card">
+    <div id="first_child">
+      <h3>Air Quality</h3>
+    </div>
+    <div id="second_child">
+      <div>
+        <p class="text">Humidity</p>
+        <p class="number">${response[`data`][`main`][`humidity`]}</p>
+      </div>
+      <div>
+        <p class="text">Pressure</p>
+        <p class="number">${response[`data`][`main`][`pressure`]}</p>
+      </div>
+    </div>
+  </div>
+
   <div><h1>TITLE</h1></div>
   `;
 
